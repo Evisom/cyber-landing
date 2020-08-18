@@ -5,6 +5,17 @@ import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 import { isMobileQuery } from './constants'
 import Drawer from '@material-ui/core/Drawer'
+import { MainProductsSection } from './components/MainProducts/MainProductsSection'
+import { Advantage } from './components/Advantage'
+import { AllProductsSection } from './components/AllProducts/AllProductsSection'
+import { Reviews } from './components/Reviews'
+import { MediaAboutUs } from './components/MediaAboutUs'
+import { WorldQuality } from './components/WorldQuality'
+import { QualitySafety } from './components/QualitySafety'
+import { Questions } from './components/Questions'
+import { ContactForm } from './components/ContactForm'
+import { Footer } from './components/Footer'
+import { Cart } from './components/Cart'
 
 import './app.css'
 import { Header } from './components/Header'
@@ -36,9 +47,19 @@ function App() {
                     setIsCartOpen(false)
                 }}
             >
-                {/*<Cart setIsCartOpen={setIsCartOpen} />*/}
+                <Cart setIsCartOpen={setIsCartOpen} />
             </StyledDrawer>
             <Header setIsCartOpen={setIsCartOpen} />
+            <MainProductsSection />
+            <Advantage />
+            <AllProductsSection />
+            <Reviews />
+            <MediaAboutUs />
+            <WorldQuality />
+            <QualitySafety />
+            <Questions />
+            <ContactForm />
+            <Footer />
         </Wrapper>
     )
 }

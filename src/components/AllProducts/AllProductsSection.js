@@ -40,7 +40,7 @@ const Content = styled.div`
 export const AllProductsSection = () => {
     const isTablet = useMediaQuery(`(${isTabletQuery})`)
     const { setAllProductTaste, allProductTaste, allProduct } = useContext(DataContext)
-    const currentProduct = allProductsData[allProduct]
+    const currentProduct = allProductsData[allProduct || 0]
 
     return (
         <Container>

@@ -156,8 +156,8 @@ const AnimatedTitle = styled.div`
 export const ProductDescription = ({ product }) => {
   const [activeProduct, setActiveProduct] = useState(0)
   const { allProduct, setAllProduct, setAllProductTaste, allProductTaste } = useContext(DataContext)
-  const currentProduct = allProductsData[allProduct]
-  const currentProductTaste = currentProduct.items[allProductTaste]
+  const currentProduct = allProductsData[allProduct || 0]
+  const currentProductTaste = currentProduct.items[allProductTaste || 0]
   const isTablet = useMediaQuery(`(${isTabletQuery})`)
 
   const chooseProductType = (index) => {

@@ -61,8 +61,8 @@ const TitleBlack = styled(Title)`
 
 export const MainProductsSection = () => {
   const { mainProduct } = useContext(DataContext)
-  const product = mainProductData[mainProduct]
-  const currentProductTaste = mainProductData[mainProduct].items[0]
+  const product = mainProductData[mainProduct || 0]
+  const currentProductTaste = mainProductData[mainProduct || 0].items[0]
 
   return (
     <Container id="products">

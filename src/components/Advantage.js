@@ -149,6 +149,7 @@ const TableItem = styled.div`
   color: black;
   background-color: white;
   padding: 30px;
+  text-align: left;
 `
 const TableItemTitle = styled.div`
   margin: 10px 0;
@@ -168,9 +169,11 @@ const BackgroundSecondContent = styled(BackgroundFirstContent)`
   margin-bottom: 150px;
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
+  padding: 45px 100px;
+  justify-content: space-between;
   @media (${isTabletQuery}) {
     flex-direction: column;
-    padding: 30px;
+    padding: 60px 16px 32px 16px;
   }
   @media (${isMobileQuery}) {
     top: 275px;
@@ -188,6 +191,7 @@ const TitleBlack = styled.div`
   line-height: 102%;
   margin-bottom: 10px;
   margin-top: -5px;
+  text-align: left;
   @media (${isMobileQuery}) {
     font-size: 40px;
   }
@@ -209,16 +213,19 @@ const BackgroundSecondContentWrapper = styled.div`
     padding: 0 25px;
   }
   @media (${isMobileQuery}) {
+    padding: 0;
   }
 `
 const TextLine = styled.div`
   display: flex;
   width: ${(p) => (p.small ? '55%' : '100 %')};
+  text-align: left;
   @media (${isTabletQuery}) {
     width: ${(p) => (p.small ? '30%' : 'auto')};
     margin-right: ${(p) => (p.small ? '50px' : '-50px')};
   }
   @media (${isMobileQuery}) {
+    margin-right: -40px;
   }
 `
 const BottomTitle = styled.div`
@@ -241,6 +248,9 @@ const TextWrapper = styled.div`
     align-items: flex-end;
     flex-direction: column;
     margin-right: 50px;
+  }
+  @media (${isMobileQuery}) {
+    margin-right: auto;
   }
 `
 

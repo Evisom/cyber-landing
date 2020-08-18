@@ -176,15 +176,17 @@ export const ProductDescription = ({ product }) => {
   }
   return (
     <Container>
+
       <ItemChooseWrapper>
         {productCategoryList.map((item, index) => (
           <ItemChoose key={item.image} onClick={() => chooseProductType(index)}>
             <ProductImage src={item.image} left={item.leftOffset} top={item.topOffset} />
-            <StyledPath active={activeProduct === index} />
+            {/*<StyledPath active={activeProduct === index} />*/}
             <ItemChooseValue active={activeProduct === index}>{item.name}</ItemChooseValue>
           </ItemChoose>
         ))}
       </ItemChooseWrapper>
+
       <AnimatedTitle key={currentProductTaste.name}>
         <Title>{currentProductTaste.name}</Title>
         <TitleBlack> {currentProduct.tagline}</TitleBlack>

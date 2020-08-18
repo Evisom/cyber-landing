@@ -11,3 +11,32 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+    font-family: "Cervo";
+    src: url("fonts/CervoItalic.otf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Cervo";
+    src: url("fonts/CervoRegular.otf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gerbera";
+    src: url("fonts/Gerbera.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gerbera";
+    src: url("fonts/GerberaMedium.ttf");
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .Advantage__TextLine-xzi6n3-16.bkIWnl {
+        margin-top: 16px;
+        text-align: revert;
+        width: 204px;
+        margin-right: 0;
+    }
+}

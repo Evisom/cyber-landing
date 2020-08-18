@@ -28,26 +28,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
-  @font-face {
-    font-family: "Cervo";
-    src: url("fonts/CervoItalic.otf");
-    font-style: italic;
-  } 
-  @font-face {
-    font-family: "Cervo";
-    src: url("fonts/CervoRegular.otf");
-    font-style: normal;
-  }  
-  @font-face {
-    font-family: "Gerbera";
-    src: url("fonts/Gerbera.ttf");
-    font-style: normal;
-  }  
-  @font-face {
-    font-family: "Gerbera";
-    src: url("fonts/GerberaMedium.ttf");
-    font-weight: 500;
-  }
+
   
 `
 

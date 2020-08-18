@@ -53,7 +53,7 @@ export const AllProductsSection = () => {
                         tasteIndex={allProductTaste}
                     />
                 )}
-                {/*<ProductDescription />*/}
+                <ProductDescription />
             </Content>
         </Container>
     )

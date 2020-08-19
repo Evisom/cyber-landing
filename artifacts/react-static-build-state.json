@@ -16,30 +16,30 @@
   "entry": "index.js",
   "plugins": [
     [
-      "/Users/evisom/Desktop/my-static-site/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      "/Users/chesminsky/Desktop/cyber-landing/node_modules/react-static-plugin-source-filesystem/node.api.js",
       {
-        "location": "/Users/evisom/Desktop/my-static-site/src"
+        "location": "/Users/chesminsky/Desktop/cyber-landing/src"
       }
     ],
-    "/Users/evisom/Desktop/my-static-site/node_modules/react-static-plugin-reach-router/browser.api.js",
-    "/Users/evisom/Desktop/my-static-site/node_modules/react-static-plugin-sitemap/dist/node.api.js",
-    "/Users/evisom/Desktop/my-static-site/node_modules/react-static-plugin-styled-components/node.api.js",
-    "/Users/evisom/Desktop/my-static-site"
+    "/Users/chesminsky/Desktop/cyber-landing/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/chesminsky/Desktop/cyber-landing/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/chesminsky/Desktop/cyber-landing/node_modules/react-static-plugin-styled-components/node.api.js",
+    "/Users/chesminsky/Desktop/cyber-landing"
   ],
   "paths": {
-    "ROOT": "/Users/evisom/Desktop/my-static-site",
-    "SRC": "/Users/evisom/Desktop/my-static-site/src",
-    "DIST": "/Users/evisom/Desktop/my-static-site/dist",
-    "ASSETS": "/Users/evisom/Desktop/my-static-site/dist",
-    "PLUGINS": "/Users/evisom/Desktop/my-static-site/plugins",
-    "TEMP": "/Users/evisom/Desktop/my-static-site/tmp",
-    "ARTIFACTS": "/Users/evisom/Desktop/my-static-site/artifacts",
-    "PUBLIC": "/Users/evisom/Desktop/my-static-site/public",
-    "NODE_MODULES": "/Users/evisom/Desktop/my-static-site/node_modules",
-    "EXCLUDE_MODULES": "/Users/evisom/Desktop/my-static-site/node_modules",
-    "PACKAGE": "/Users/evisom/Desktop/my-static-site/package.json",
-    "HTML_TEMPLATE": "/Users/evisom/Desktop/my-static-site/dist/index.html",
-    "STATIC_DATA": "/Users/evisom/Desktop/my-static-site/dist/staticData"
+    "ROOT": "/Users/chesminsky/Desktop/cyber-landing",
+    "SRC": "/Users/chesminsky/Desktop/cyber-landing/src",
+    "DIST": "/Users/chesminsky/Desktop/cyber-landing/dist",
+    "ASSETS": "/Users/chesminsky/Desktop/cyber-landing/dist",
+    "PLUGINS": "/Users/chesminsky/Desktop/cyber-landing/plugins",
+    "TEMP": "/Users/chesminsky/Desktop/cyber-landing/tmp",
+    "ARTIFACTS": "/Users/chesminsky/Desktop/cyber-landing/artifacts",
+    "PUBLIC": "/Users/chesminsky/Desktop/cyber-landing/public",
+    "NODE_MODULES": "/Users/chesminsky/Desktop/cyber-landing/node_modules",
+    "EXCLUDE_MODULES": "/Users/chesminsky/Desktop/cyber-landing/node_modules",
+    "PACKAGE": "/Users/chesminsky/Desktop/cyber-landing/package.json",
+    "HTML_TEMPLATE": "/Users/chesminsky/Desktop/cyber-landing/dist/index.html",
+    "STATIC_DATA": "/Users/chesminsky/Desktop/cyber-landing/dist/staticData"
   },
   "siteRoot": "/",
   "basePath": "",

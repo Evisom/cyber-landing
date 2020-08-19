@@ -2,7 +2,6 @@ import styled from 'styled-components/macro'
 import React, { useContext, useState } from 'react'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { keyframes } from 'styled-components'
-import { ReactComponent as Path } from '../../images/pathRed.svg'
 import { isMobileQuery, isTabletQuery } from '../../constants'
 import { allProductsData } from '../../data/productsData'
 import { Composition } from '../Composition'
@@ -100,7 +99,9 @@ const DescriptionBoxItemValue = styled.div`
   margin-left: 20px;
 `
 
-const StyledPath = styled(({ active, ...props }) => <Path {...props} />)`
+const StyledPath = styled(({ active, ...props }) => <svg {...props} width="133" height="118" viewBox="0 0 133 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Path Copy" fill-rule="evenodd" clip-rule="evenodd" d="M78.5371 0.910003L130.575 31.8305C132.53 32.5498 133.407 34.0014 132.342 36.712L118.23 80.4785C117.515 83.5487 115.936 84.2809 113.279 85.8995L61.2413 116.82C58.7723 117.912 55.7768 117.912 54.1851 116.473L2.1347 85.7197C0.192058 84.8204 -0.334337 83.5487 0.192058 81.5575L14.129 37.2643C14.6554 34.7208 16.6106 33.4619 19.0796 32.0103L71.6439 0.730158C74.1129 -0.361756 76.9454 -0.169065 78.5371 0.910003Z" fill="currentColor"/>
+</svg>)`
   color: ${(p) => (p.active ? '#FF2727' : '#00C0F3')};
   transition: 300ms color cubic-bezier(0, 0, 0.2, 1);
 `
@@ -181,7 +182,7 @@ export const ProductDescription = ({ product }) => {
         {productCategoryList.map((item, index) => (
           <ItemChoose key={item.image} onClick={() => chooseProductType(index)}>
             <ProductImage src={item.image} left={item.leftOffset} top={item.topOffset} />
-            {/*<StyledPath active={activeProduct === index} />*/}
+            <StyledPath active={activeProduct === index} />
             <ItemChooseValue active={activeProduct === index}>{item.name}</ItemChooseValue>
           </ItemChoose>
         ))}
